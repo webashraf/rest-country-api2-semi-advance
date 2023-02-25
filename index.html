@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+
+<body>
+<header class="px-14">
+    <div class="navbar bg-base-100">
+        <div class="flex-1">
+          <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+        </div>
+        <div class="flex-none">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>All countries</a></li>
+            <li tabindex="0">
+              <a>
+                Filter
+                <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
+              </a>
+              <ul class="p-2 bg-base-100">
+                <li><a>Region</a></li>
+                <li><a>Capital city</a></li>
+                <li><a>Language</a></li>
+              </ul>
+            </li>
+            <li><a>About us</a></li>
+          </ul>
+        </div>
+      </div>
+</header>
+
+<main class="px-14 py-16">
+    <section id="all-country" class="grid grid-cols-4 gap-12 px-14">
+
+    </section>
+<div class="text-center">
+  <button id="show-more-button" class="mx-auto bg-pink-400 hover:bg-purple-600 text-white px-9 py-4 rounded-lg shadow-lg my-10">Show More..</button>
+</div>
+    <input type="checkbox" id="my-modal-6" class="modal-toggle" />
+    <div  class="modal modal-bottom sm:modal-middle h-full">
+      <div id="modal-perent-card" class="modal-box ">
+      </div>
+    </div>
+</main>
+
+    <!-- script....... -->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
